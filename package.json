@@ -1,0 +1,23 @@
+{
+  "name": "checkout-page",
+  "version": "1.0.0",
+  "description": "homework for kottan's html/css form",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yulyasystem/checkout-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yulyasystem/checkout-page/issues"
+  },
+  "homepage": "https://github.com/yulyasystem/checkout-page#readme",
+  "devDependencies": {
+    "sass": "^1.17.0"
+  }
+}
