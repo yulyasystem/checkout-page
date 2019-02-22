@@ -19,5 +19,8 @@
   "homepage": "https://github.com/yulyasystem/checkout-page#readme",
   "devDependencies": {
     "sass": "^1.17.0"
+  },
+  "dependencies": {
+    "cssnano": "^4.1.10"
   }
 }
