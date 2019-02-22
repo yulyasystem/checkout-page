@@ -103,10 +103,14 @@
   margin-right: 2em;
 }
 
-.fa-trash{
- font-size: 14px;
- color: rgb(168, 170, 194);
+.fa-trash {
+  font-size: 14px;
+  color: rgb(168, 170, 194);
 
+}
+
+.upload-table-button:hover {
+  opacity: 0.8;
 }
 
 .upload-table-button {
