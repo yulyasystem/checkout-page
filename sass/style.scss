@@ -5,6 +5,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .visually-hidden {
@@ -19,8 +20,8 @@ body {
   background-color: rgb(230, 232, 238);
   height: 100%;
   color: rgb(168, 170, 194);
-  padding: 104px 103px; //for desktop/ 
-  // padding: 74px 15px; // for mobile
+  padding: 104px 103px;
+
 }
 
 .nav-top {
@@ -39,7 +40,7 @@ body {
   text-align: center;
 }
 
-.button-icon{
+.button-icon {
   margin-right: 10px;
 }
 
@@ -62,7 +63,7 @@ body {
     "card-info card-info card-info"
     "selection-card selection-card selection-card"
     "card-detail card-detail card-detail"
-    ". button button";
+    "button button button";
 
   background-color: rgb(255, 255, 255);
   border-radius: 6px;
@@ -79,3 +80,4 @@ body {
 @import "tone.scss";
 @import "range.scss";
 @import "card-checkout.scss";
+@import "media.scss"

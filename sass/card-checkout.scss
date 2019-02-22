@@ -154,6 +154,10 @@
 
 .button-group-down {
   grid-area: button;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
   padding-top: 70px;
   padding-bottom: 90px;
 }
@@ -171,6 +175,7 @@
   width: 250px;
   padding: 20px 40px;
   margin: 10px;
+  flex-basis: 10%;
 }
 
 .footer-input{
