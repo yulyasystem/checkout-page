@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous" />
-    <link rel="stylesheet" href="/dist/checkout-page.b19f721f.css">
+    <link rel="stylesheet" href="/dist/checkout-page.e31bb0bc.css">
   <title>Checkout Page</title>
 </head>
 
@@ -268,19 +268,20 @@
 
           <div class="card-field card-name">
             <label for="full-name" class="card-label">Full Name</label>
-            <input type="text" pattern="[A-Za-zА-Яа-яЁё]{1,}" name="full name" id="full-name" placeholder="Mathieu Mayer"
+            <input type="text" 
+            pattern="(?n:(^(?(?![^,]+?,)((?<first>[A-Z][a-z]*?) )?((?<second>[A-Z][a-z]*?) )?((?<third>[A-Z][a-z]*?) )?)(?<last>[A-Z](('|[a-z]{1,2})[A-Z])?[a-z]+))(?(?=,)(, (?<first>[A-Z][a-z]*?))?( (?<second>[A-Z][a-z]*?))?( (?<third>[A-Z][a-z]*?))?)$)" name="full name" id="full-name" placeholder="Mathieu Mayer"
               class="card-input " required>
           </div>
 
           <div class="card-field card-email">
             <label for="email-address" class="card-label">Email Address</label>
-            <input type="email" pattern="[A-Za-zА-Яа-яЁё]{1,}" name="email" id="femail-address" placeholder="kottans@me.com"
+            <input type="email" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" name="email" id="femail-address" placeholder="kottans@me.com"
               class="card-input " required>
           </div>
 
           <div class="card-field card-password">
             <label for="password" class="card-label">Choose a password</label>
-            <input type="password" pattern="[A-Za-zА-Яа-яЁё]{1,}" name="password" id="password" class="card-input "
+            <input type="password" pattern="^[a-zA-Z]\w{3,14}$" name="password" id="password" class="card-input "
               minlength="6" placeholder="•••••••" required>
           </div>
 
@@ -319,19 +320,19 @@
         <div class="card-field card-number">
           <label for="number" class="card-label">Card number</label>
           <input type="text"  name="card number" id="number" 
-            minlength="16" maxlength="16" class="card-input input-name " required>
+            minlength="16" maxlength="16" class="card-input input-name " pattern="^(\d{4}-){3}\d{4}$|^(\d{4} ){3}\d{4}$|^\d{16}$" required>
         </div>
 
         <div class="card-field card-date">
           <label for="date" class="card-label">Expiry Date</label>
-          <input type="text" pattern="\d{2}/\d{2}/\d{2}" name="date" id="date" placeholder="DD / MM / YY"
+          <input type="text" pattern="^\d{1,2}\/\d{1,2}\/\d{4}$" name="date" id="date" placeholder="DD / MM / YY"
             class="card-input input-date " required>
         </div>
         
         <div class="card-field card-code">
           <label for="code" class="card-label">Code</label>
           <input type="text"  name="password" id="code" class="card-input input-code" minlength="3"
-            pattern="^[0-9]+$" required>
+            pattern="^(?!000)\d{3,4}$" required>
         </div>
 
 
