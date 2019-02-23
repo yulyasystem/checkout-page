@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous" />
-    <link rel="stylesheet" href="/dist/checkout-page.e31bb0bc.css">
+    <link rel="stylesheet" href="/dist/style.css">
   <title>Checkout Page</title>
 </head>
 
@@ -44,12 +44,12 @@
           </tr>
         </table>
         <div class="header-buttons">
+          <input type="submit" value="" id="submit-button" class="submit-input visually-hidden">
           <label for="submit-button" class=" button order-button" tabindex="0">
-            <input type="submit" value="" id="submit-button" class="submit-input visually-hidden">
             Place order
           </label>
+         <input type="button" value="" id="print-button" class="submit-input visually-hidden">
           <label for="print-button" class="button quote-button" tabindex="0">
-            <input type="button" value="" id="print-button" class="submit-input visually-hidden">
             Print a quote
           </label>
         </div>
@@ -75,16 +75,16 @@
       <fieldset class="selection-radio">
         <div class="radio-group">
           <div class="radio-button">
-            <input type="radio" name="group1" id="website" class="radio-input visually-hidden" required />
-            <label for="website" class="radio-label label-website" tabindex="0">
+            <input type="radio" name="group1" id="website" class="radio-input visually-hidden" required  />
+            <label for="website" class="radio-label label-website" >
               <img src="/img/website.png" alt="page icon" class="radio-img" />
               <span class="heading ">Website</span>
             </label>
           </div>
 
           <div class="radio-button">
-            <input type="radio" name="group1" id="document" class="radio-input visually-hidden" />
-            <label for="document" tabindex="0" class="radio-label label-document">
+            <input type="radio" name="group1" id="document" class="radio-input visually-hidden" checked />
+            <label for="document"  class="radio-label label-document">
               <img src="/img/documents.png" alt="page icon" class="radio-img" />
               <span class="heading">Document</span>
             </label>
@@ -92,7 +92,7 @@
 
           <div class="radio-button">
             <input type="radio" name="group1" id="account" class="radio-input visually-hidden" />
-            <label for="account" class="radio-label label-account" tabindex="0">
+            <label for="account" class="radio-label label-account" >
               <img src="/img/account.png" alt="page icon" class="radio-img" />
               <span class="heading">Social Account</span>
             </label>
@@ -207,7 +207,7 @@
         <fieldset class="tone-radio">
           <div class="tone-radio-button">
             <input type="radio" name="group2" id="casual" class="tone-radio-input visually-hidden" required />
-            <label for="casual" class="tone-radio-label " tabindex="0">
+            <label for="casual" class="tone-radio-label " >
               <i class="fas fa-comments"></i>
               <span class="tone-span ">Friendly / Cassual</span>
             </label>
@@ -215,7 +215,7 @@
 
           <div class="tone-radio-button">
             <input type="radio" name="group2" id="pro" class="tone-radio-input visually-hidden" />
-            <label for="pro" tabindex="0" class="tone-radio-label ">
+            <label for="pro"  class="tone-radio-label ">
               <i class="fas fa-briefcase"></i>
               <span class="tone-span">Corporate / Pro</span>
             </label>
@@ -223,15 +223,12 @@
 
           <div class="tone-radio-button">
             <input type="radio" name="group2" id="formal" class="tone-radio-input visually-hidden" />
-            <label for="formal" class="tone-radio-label " tabindex="0">
+            <label for="formal" class="tone-radio-label " >
               <i class="fas fa-bullhorn"></i>
               <span class="tone-span">Media / Formal</span>
             </label>
           </div>
         </fieldset>
-
-
-
       </fieldset>
 
       <div class="range-section">
@@ -293,25 +290,24 @@
 
         <div class="card-radio-button">
           <input type="radio" name="group3" id="visa" class="card-radio-input visually-hidden" required />
-          <label for="visa" class="card-radio-label " tabindex="0">
+          <label for="visa" class="card-radio-label " >
             <img src="/img/visa.png" alt="visa logo">
           </label>
         </div>
 
         <div class="card-radio-button">
-          <input type="radio" name="group3" id="paypal" class="card-radio-input visually-hidden" />
-          <label for="paypal" tabindex="0" class="card-radio-label ">
+          <input type="radio" name="group3" id="paypal" class="card-radio-input visually-hidden" checked />
+          <label for="paypal"  class="card-radio-label ">
             <img src="/img/paypal.png" alt="paypal logo">
           </label>
         </div>
 
         <div class="card-radio-button">
           <input type="radio" name="group3" id="amazon" class="card-radio-input visually-hidden" />
-          <label for="amazon" class="card-radio-label " tabindex="0">
+          <label for="amazon" class="card-radio-label " >
             <img src="/img/amazon.png" alt="amazon logo">
           </label>
         </div>
-
 
       </div>
 
@@ -334,9 +330,6 @@
           <input type="text"  name="password" id="code" class="card-input input-code" minlength="3"
             pattern="^(?!000)\d{3,4}$" required>
         </div>
-
-
-
       </div>
 
       <footer class="button-group-down">
@@ -345,19 +338,15 @@
           I agree to the 
           <a href="#" class="footer-link">Terms & Conditions</a>
         </label>
-
+          <input type="submit" value="" id="submit-button-footer" class="submit-input visually-hidden">
           <label for="submit-button-footer" class=" button order-button footer-button" tabindex="0">
-            <input type="submit" value="" id="submit-button-footer" class="submit-input visually-hidden">
             Place order
           </label>
+          <input type="button" value="" id="print-button-footer" class="submit-input visually-hidden">
           <label for="print-button-footer" class="button quote-button footer-button" tabindex="0">
-            <input type="button" value="" id="print-button-footer" class="submit-input visually-hidden">
             Print a quote
           </label>
-
       </footer>
-
-
     </form>
 
   </div>

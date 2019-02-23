@@ -105,6 +105,11 @@ body {
   align-items: center;
 }
 
+.submit-input:focus + label {
+  outline: 2px solid Highlight;
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
 .button {
   width: 60%;
   height: 7%;
@@ -213,6 +218,11 @@ body {
   border-radius: 6px;
   border: 1px solid #dddde4;
   background-color: #f7f7fa;
+}
+
+.radio-input:focus + label {
+  outline: 2px solid Highlight;
+  outline: auto 5px -webkit-focus-ring-color;
 }
 
 .radio-input:checked ~ .radio-label {
@@ -511,6 +521,11 @@ body {
   color: #635c64;
 }
 
+.tone-radio-input:focus + label {
+  outline: 2px solid Highlight;
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
 .tone-radio {
   border: none;
   display: flex;
@@ -757,6 +772,11 @@ body {
   box-shadow: inset 0px 0px 0px 5px #74a4e1;
   -moz-box-shadow: inset 0px 0px 0px 5px #74a4df;
   position: relative;
+}
+
+.card-radio-input:focus + label {
+  outline: 2px solid Highlight;
+  outline: auto 5px -webkit-focus-ring-color;
 }
 
 .card-radio-input:checked ~ .card-radio-label::before {
