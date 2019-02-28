@@ -1,5 +1,6 @@
 .upload-document-section {
   display: grid;
+  position: relative;
   grid-template-rows: repeat(3, auto);
   grid-row-gap: 42px;
   grid-area: upload;
@@ -60,7 +61,7 @@
   opacity: 0.7;
 }
 
-.upload-input:focus+label {
+.upload-input:focus~label {
   outline: 2px solid Highlight;
   outline: auto 5px -webkit-focus-ring-color;
 }
@@ -98,7 +99,6 @@
 }
 
 .upload-table-td {
-
   font-size: 14px;
   block-size: 10%;
 }
@@ -111,7 +111,6 @@
 .fa-trash {
   font-size: 14px;
   color: rgb(168, 170, 194);
-
 }
 
 .upload-table-button:hover {
